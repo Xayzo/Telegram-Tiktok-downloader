@@ -24,5 +24,5 @@ async def start(message: types.Message):
     await message.reply("Hai, aku adalah Tiktok Downloader Bot, bot Telegram yang diciptakan untuk mendownload video dari Tiktok tanpa watermark\n\n By @DionProjects")
 
 @dp.message_handler(commands=['help'], commands_prefix='!/&')
-async def start(message: types.Message):
+async def help(message: types.Message):
     await message.reply("Untuk mengunduh video dari Tiktok, cukup kirimkan tautan video tiktok anda disini")
