@@ -19,7 +19,10 @@ async def get_message(message: types.Message):
                 await lol.delete()
             break
 
-@dp.message_handler(commands=['start', 'help'], commands_prefix='!/')
+@dp.message_handler(commands=['start'], commands_prefix='!/&')
 async def start(message: types.Message):
-    await message.reply("Untuk mengunduh video, cukup kirimkan tautan video tiktok anda")
+    await message.reply("Hai, aku adalah Tiktok Downloader Bot, bot Telegram yang diciptakan untuk mendownload video dari Tiktok tanpa watermark\n\n By @DionProjects")
 
+@dp.message_handler(commands=['help'], commands_prefix='!/&')
+async def start(message: types.Message):
+    await message.reply("Untuk mengunduh video dari Tiktok, cukup kirimkan tautan video tiktok anda disini")
